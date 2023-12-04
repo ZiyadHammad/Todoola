@@ -12,5 +12,5 @@ Create Projects & Tasks to keep track of as you work on completing them.
 
 ## UI
 
-![dashboard](./UI.png)
-![popups](./UI2.png)
+![dashboard](./pic1.png)
+![popups](./pic2.png)
