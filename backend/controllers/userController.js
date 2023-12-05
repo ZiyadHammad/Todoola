@@ -46,9 +46,9 @@ const signUp = asyncHandler(async (req, res) => {
 });
 
 const logIn = asyncHandler(async (req, res) => {
-  const { userName, password, email } = req.body;
+  const { userName, password } = req.body;
 
-  const user = await User.findOne({ email, userName });
+  const user = await User.findOne({ userName });
 
   if (user && (await bcrypt.compare(password, user.hash))) {
     res.status(200).json({
